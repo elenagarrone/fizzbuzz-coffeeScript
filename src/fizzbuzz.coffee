@@ -19,8 +19,6 @@ class Fizzbuzz
 		else
 			number
 
-
-
-
-
-	module.exports = Fizzbuzz
+	@shout(i) for i in [0..30]
+	
+module.exports = Fizzbuzz
