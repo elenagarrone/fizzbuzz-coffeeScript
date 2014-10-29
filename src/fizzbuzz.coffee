@@ -9,4 +9,16 @@ class Fizzbuzz
 	isDivisibleByFifteen: (number) ->
 		number % 15 == 0
 
+	shout: (number) ->
+		if @isDivisibleByFifteen(number)
+			'FizzBuzz'
+		else if @isDivisibleByThree(number) 
+			'Fizz'  
+		else if @isDivisibleByFive(number)
+			'Buzz' 
+
+
+
+
+
 	module.exports = Fizzbuzz
