@@ -16,6 +16,8 @@ class Fizzbuzz
 			'Fizz'  
 		else if @isDivisibleByFive(number)
 			'Buzz' 
+		else
+			number
 
 
 

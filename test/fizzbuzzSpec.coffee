@@ -42,3 +42,6 @@ describe 'Fizzbuzz', ->
 		it "FizzBuzz if it's divisible by fifteen", ->
 			expect(fizzbuzz.shout(15)).to.equal('FizzBuzz')
 
+		it "back the number if it's not divisible by 3, 5, 15", ->
+			expect(fizzbuzz.shout(1)).to.equal(1)
+
