@@ -1,24 +1,24 @@
 class Fizzbuzz
 
-	isDivisibleByThree: (number) ->
-		number % 3 == 0
+  isDivisibleByThree: (number) ->
+    number % 3 == 0
 
-	isDivisibleByFive: (number) ->
-		number % 5 == 0
+  isDivisibleByFive: (number) ->
+    number % 5 == 0
 
-	isDivisibleByFifteen: (number) ->
-		number % 15 == 0
+  isDivisibleByFifteen: (number) ->
+    number % 15 == 0
 
-	shout: (number) ->
-		if @isDivisibleByFifteen(number)
-			'FizzBuzz'
-		else if @isDivisibleByThree(number) 
-			'Fizz'  
-		else if @isDivisibleByFive(number)
-			'Buzz' 
-		else
+  shout: (number) ->
+    if @isDivisibleByFifteen(number)
+      'FizzBuzz'
+    else if @isDivisibleByThree(number)
+      'Fizz'
+    else if @isDivisibleByFive(number)
+      'Buzz'
+    else
 			number
 
-	@shout(i) for i in [0..30]
-	
+  @shout(number) for number in [0..30]
+
 module.exports = Fizzbuzz
